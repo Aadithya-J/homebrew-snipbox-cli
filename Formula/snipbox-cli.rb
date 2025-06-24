@@ -8,7 +8,7 @@ class SnipboxCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "snipbox", "./cmd"
+    system "go", "build", "-o", "snipbox"
     bin.install "snipbox"
   end
 
