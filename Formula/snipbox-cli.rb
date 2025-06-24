@@ -7,10 +7,12 @@ class SnipboxCli < Formula
 
   depends_on "go" => :build
 
-  def install
-    system "go", "build", "-o", "snipbox"
-    bin.install "snipbox"
-  end
+    def install
+        system "go", "build", "-o", "snipbox"
+        chmod 0755, "snipbox"
+        bin.install "snipbox"
+    end
+
 
   test do
     system "#{bin}/snipbox", "--version"
