@@ -5,20 +5,20 @@
 class SnipboxCli < Formula
   desc "A CLI for Snipbox"
   homepage "https://github.com/Aadithya-J/snipbox-cli"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.2/snipbox-cli_1.0.2_darwin_amd64.tar.gz"
-      sha256 "659a66fea8161944ab4e3ab5840f213dc4b153f09ef673cac9f02cb2f14a4416"
+      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.3/snipbox-cli_1.0.3_darwin_amd64.tar.gz"
+      sha256 "aefe5b0cff82f47cc6cf94646d0848d8d89a0c9c9cef021ab4bf837b9f56c65a"
 
       def install
         bin.install "snipbox-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.2/snipbox-cli_1.0.2_darwin_arm64.tar.gz"
-      sha256 "a80df26398e4f5c9d1ef497686aa5975edb0baaa613ed64c784431f9eacf4794"
+      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.3/snipbox-cli_1.0.3_darwin_arm64.tar.gz"
+      sha256 "b24c895c0c5d3f3550a7e647f270bb5a38b5e431d7a6a604a8ee6c4e8da30bd3"
 
       def install
         bin.install "snipbox-cli"
@@ -28,15 +28,15 @@ class SnipboxCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.2/snipbox-cli_1.0.2_linux_amd64.tar.gz"
-      sha256 "279f559de4974813059cf0307ebdf624aa31e193ca3749760264281c8e33b4ca"
+      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.3/snipbox-cli_1.0.3_linux_amd64.tar.gz"
+      sha256 "66f245125614ce18e2d8e0df1ad94ade665d17fde264829f1dbcbd2558d41449"
       def install
         bin.install "snipbox-cli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.2/snipbox-cli_1.0.2_linux_arm64.tar.gz"
-      sha256 "f1bd0bec0a636e05d031fd77226ac0fe5b1dbd0cfce5a6f5998040c5d73a1d01"
+      url "https://github.com/Aadithya-J/snipbox-cli/releases/download/v1.0.3/snipbox-cli_1.0.3_linux_arm64.tar.gz"
+      sha256 "78f2fc7e6d9001c363ccb7362759e1bf325646ed8776b7950f3df792a69df1ff"
       def install
         bin.install "snipbox-cli"
       end
